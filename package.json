@@ -1,0 +1,16 @@
+{
+  "name": "mi-app-logs",
+  "version": "1.0.0",
+  "description": "Aplicación con sistema de logs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
