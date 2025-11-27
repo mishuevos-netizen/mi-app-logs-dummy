@@ -44,8 +44,20 @@
     <h1>❖❖ ¡Registrando Logs! ❖❖</h1>
     <button onclick="saludar()">❖❖ Saludar</button>
     <button onclick="error()">✗ Forzar Error</button>
+    <button onclick="ejemploSuma()">🧮 Probar Suma</button>
     <p id="resultado"></p>
     <div id="logs"></div>
     <script src="app.js"></script>
+    <script>
+        // Función adicional para probar suma con logs
+        function ejemploSuma() {
+            try {
+                const resultado = sumarConLogs(5, 3);
+                document.getElementById('resultado').textContent = `Resultado: 5 + 3 = ${resultado}`;
+            } catch (e) {
+                document.getElementById('resultado').textContent = `Error: ${e.message}`;
+            }
+        }
+    </script>
 </body>
 </html>
